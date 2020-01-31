@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails',                   '5.1.6'
+gem 'rails', '5.2.0'
 gem 'bcrypt',                  '3.1.12'
 gem 'faker',                   '1.7.3'
 gem 'carrierwave',             '1.2.2'
@@ -18,6 +18,10 @@ gem 'jbuilder',                '2.7.0'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'bootsnap', require: false
+gem 'activestorage', '~> 5.2.0' 
+gem "aws-sdk-s3", require: false
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
