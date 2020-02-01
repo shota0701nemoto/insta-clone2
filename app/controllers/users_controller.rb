@@ -16,6 +16,10 @@ class UsersController < ApplicationController
     @user = User.new
     render 'new'
   end
+  
+  def create
+    @user.create(...., avatar: params[:avatar])
+  end
 
 
 
