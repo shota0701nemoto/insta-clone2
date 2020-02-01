@@ -1,7 +1,11 @@
 class ImageUploader < CarrierWave::Uploader::Base
-  # Include RMagick or MiniMagick support:
-  # include CarrierWave::RMagick
-  # include CarrierWave::MiniMagick
+  
+  #fogに画像格納
+  if Rails.env.production?
+    storage :fog
+  else
+    storage :file
+  end
 
   # Choose what kind of storage to use for this uploader:
   storage :file

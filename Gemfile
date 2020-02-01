@@ -21,10 +21,11 @@ gem 'omniauth-facebook'
 gem 'bootsnap', require: false
 gem 'activestorage', '~> 5.2.0' 
 gem "aws-sdk-s3", require: false
+gem 'fog-aws'
 
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
+  gem 'sqlite3', groups: %w(test development), require: false
   gem 'byebug',  '9.0.6', platform: :mri
 end
 
@@ -44,7 +45,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg',   '0.20.0'
+  gem 'pg', groups: %w(production), require: false
   gem 'fog',  '1.42'
 end
 
