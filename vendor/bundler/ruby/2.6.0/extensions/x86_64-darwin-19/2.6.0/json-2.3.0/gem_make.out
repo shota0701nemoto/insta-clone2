@@ -1,0 +1,13 @@
+current directory: /Users/shogo/environment/insta-clone/vendor/bundler/ruby/2.6.0/gems/json-2.3.0/ext/json
+/Users/shogo/.rbenv/versions/2.6.3/bin/ruby -I /Users/shogo/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200201-10469-gtqihz.rb extconf.rb
+creating Makefile
+
+current directory: /Users/shogo/environment/insta-clone/vendor/bundler/ruby/2.6.0/gems/json-2.3.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/shogo/environment/insta-clone/vendor/bundler/ruby/2.6.0/gems/json-2.3.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/shogo/environment/insta-clone/vendor/bundler/ruby/2.6.0/gems/json-2.3.0/ext/json
+make "DESTDIR=" install

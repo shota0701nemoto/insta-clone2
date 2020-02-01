@@ -24,8 +24,10 @@ gem "aws-sdk-s3", require: false
 gem 'fog-aws'
 
 
+
 group :development, :test do
-  gem 'sqlite3', groups: %w(test development), require: false
+
+  gem 'sqlite3', '~> 1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
 end
 
@@ -45,7 +47,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg', groups: %w(production), require: false
+  gem 'pg',   '1.1.4'
   gem 'fog',  '1.42'
 end
 
