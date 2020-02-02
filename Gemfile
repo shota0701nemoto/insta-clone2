@@ -22,14 +22,14 @@ gem 'bootsnap', require: false
 gem 'activestorage', '~> 5.2.0' 
 gem "aws-sdk-s3", require: false
 gem 'fog-aws'
+gem 'dotenv-rails'
 
 
 
 group :development, :test do
 
 
-  gem 'byebug',  '9.0.6', platform: :mri
-end
+   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]end
 
 group :development do
   gem 'web-console',           '3.5.1'
