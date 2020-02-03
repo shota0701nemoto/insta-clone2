@@ -2,7 +2,8 @@ class User < ApplicationRecord
 
   validates :password, presence: true, length: {minimum: 8}, on: :facebook_login
   
-  has_one_attached :avatar
+  #以下を追記(１対多の関連付けの場合はhas_many_attachedとする）
+  has_one_attached :image
 
   def self.from_omniauth(auth)
     user = User.where('email = ?', auth.info.email).first
