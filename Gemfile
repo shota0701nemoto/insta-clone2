@@ -23,6 +23,7 @@ gem 'activestorage', '~> 5.2.0'
 gem "aws-sdk-s3", require: false
 gem 'fog-aws'
 gem 'dotenv-rails'
+gem 'msgpack'
 
 
 
