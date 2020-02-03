@@ -24,7 +24,7 @@ Rails.application.configure do
   
   # config.action_controller.asset_host = 'http://assets.example.com'
 
-  config.active_storage.service = :amazon
+  
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
